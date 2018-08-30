@@ -1,3 +1,4 @@
+// create promise
 const p = new Promise((resolve, reject) => {
   // kick off some asych operation
   setTimeout(() => {
@@ -6,4 +7,5 @@ const p = new Promise((resolve, reject) => {
   }, 2000);
 });
 
+// consume promise
 p.then(res => console.log(res)).catch(err => console.log(err.message));
